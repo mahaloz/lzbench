@@ -1,0 +1,9 @@
+# Namespaced project name that the target belongs to
+project: lzbench
+
+# Target name (should be unique within the project)
+target: lzbench
+
+# List of commands used to test the target
+cmds:
+    - cmd: /lzbench @@
