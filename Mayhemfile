@@ -9,3 +9,4 @@ target: lzbench
 # List of commands used to test the target
 cmds:
     - cmd: /lzbench @@
+      timeout: 300
