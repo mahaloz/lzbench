@@ -8,7 +8,7 @@ RUN apt-get update && \
 ## Add source code to the build stage.
 ADD . /lzbench
 WORKDIR /lzbench
-RUN CC=clang CXX=clang++ CFLAGS=fsanitize=address CXXFLAGS=fsanitize=address make -j7
+RUN CC=clang CXX=clang++ CFLAGS=-fsanitize=address CXXFLAGS=-fsanitize=address make -j7
 
 
 # Package Stage
